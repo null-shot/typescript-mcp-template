@@ -3,7 +3,9 @@
 	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
+	"packageManager": "yarn@4.5.0",
 	"scripts": {
+		"build": "yarn install --immutable",
 		"deploy": "wrangler deploy",
 		"dev": "concurrently \"npx @modelcontextprotocol/inspector\" \"wrangler dev\" --kill-others",
 		"start": "wrangler dev",
