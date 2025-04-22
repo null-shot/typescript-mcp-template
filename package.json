@@ -13,6 +13,8 @@
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.15",
 		"@cloudflare/workers-types": "^4.20250417.0",
+		"@vitest/runner": "^3.1.2",
+		"@vitest/snapshot": "^3.1.2",
 		"@xava-labs/test-utils": "^0.1.1",
 		"concurrently": "^9.1.2",
 		"typescript": "^5.8.3",
