@@ -2,18 +2,24 @@
 
 A template repository for bootstrapping MCPs (Model Context Protocol) for the xava-labs/typescript-agent-framework.
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/xava-labs/mcp-template)
-
 ## Getting Started
 
 ### Setup the repository
 
-**Option A: Use this template***
+**Option A: Use this template**
 
 1. Click the "Use this template" button at the top of this repository
 2. Clone your new repository
 
-**Option b: Use wrangler init**
+**Option B: Use deploy to cloudflare button**
+
+The following button will create a new repo in your organization and setup teh CI/CD using Cloudflare:
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/xava-labs/mcp-template)
+
+*NOTE: The configuration only needs `npm run deploy` for the Deploy command to work*
+
+**Option C: Use cloudflare create**
 
 You can create a new project based on this template using wrangler:
 
@@ -24,7 +30,7 @@ You can create a new project based on this template using wrangler:
 
 2. Run the following command, follow interactive prompt by choosing name, then start with "Template from GitHub repo" and then paste the above text for the template you want to use.
 ```bash
-npx create cloudflare@latest  --git https://github.com/xava-labs/mcp-template
+npm create cloudflare@latest  --git https://github.com/xava-labs/mcp-template
 ```
 
 Once you have completed one of the above methods, then run the following commands in your terminal to get started:
