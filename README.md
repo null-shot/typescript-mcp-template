@@ -17,9 +17,14 @@ A template repository for bootstrapping MCPs (Model Context Protocol) for the xa
 
 You can create a new project based on this template using wrangler:
 
+
+1. Copy the following text for ease
+
+```xava-labs/mcp-template```
+
+2. Run the following command, follow interactive prompt by choosing name, then start with "Template from GitHub repo" and then paste the above text for the template you want to use.
 ```bash
-npx wrangler init my-mcp-project --git https://github.com/xava-labs/mcp-template
-cd my-mcp-project
+npx create cloudflare@latest  --git https://github.com/xava-labs/mcp-template
 ```
 
 Once you have completed one of the above methods, then run the following commands in your terminal to get started:
