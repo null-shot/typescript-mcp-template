@@ -30,8 +30,8 @@ npx create cloudflare@latest  --git https://github.com/xava-labs/mcp-template
 Once you have completed one of the above methods, then run the following commands in your terminal to get started:
 
 ```
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 The above will boostrap a serverless cloudflare compatible MCP Server with the following urls:
@@ -49,11 +49,11 @@ The above will boostrap a serverless cloudflare compatible MCP Server with the f
 
 ## Available Scripts
 
-- `yarn dev`: Runs both the MCP Inspector (port 6274) and Cloudflare Worker (port 8787) concurrently
-- `yarn start`: Runs only the Cloudflare Worker (port 8787)
-- `yarn test`: Runs tests with Vitest
-- `yarn deploy`: Deploys your MCP to Cloudflare Workers
-- `yarn cf-typegen`: Generates TypeScript types for Cloudflare Workers (run this everytime you add new changes to wrangler.jsonc)
+- `npm run dev`: Runs both the MCP Inspector (port 6274) and Cloudflare Worker (port 8787) concurrently
+- `npm start`: Runs only the Cloudflare Worker (port 8787)
+- `npm test`: Runs tests with Vitest
+- `npm run deploy`: Deploys your MCP to Cloudflare Workers
+- `npm run cf-typegen`: Generates TypeScript types for Cloudflare Workers (run this everytime you add new changes to wrangler.jsonc)
 
 ## Development
 
@@ -288,14 +288,6 @@ We welcome contributions to improve this template! Here's how you can contribute
 - Keep PRs focused on a single feature or fix
 
 For larger changes or features, we recommend discussing them first in our Discord channel to ensure alignment with the project direction.
-
-## Deployment
-
-To deploy your MCP to Cloudflare Workers, run:
-
-```bash
-yarn deploy
-```
 
 Or use the Deploy to Cloudflare button above to deploy directly from GitHub.
 
