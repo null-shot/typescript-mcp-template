@@ -33,6 +33,4 @@ export class ExampleMcpServer extends McpHonoServerDO {
     setupServerResources(server);
     setupServerPrompts(server);
   }
-
-  
 } 
