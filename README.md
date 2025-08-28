@@ -51,7 +51,13 @@ The above will boostrap a serverless cloudflare compatible MCP Server with the f
 
 ## Usage Overview
 
-There are two ways to leverage run an MCP Server with and without Hono:
+There are two ways to leverage run an MCP Server with and without Hono for request routing.
+
+### Environment Setup
+
+Optionally you can create a `.dev.vars` which will will bootstrap local [enviornment variables](https://nullshot.ai/en/docs/developers/platform/environment-variables) or [secrets](https://nullshot.ai/en/docs/developers/platform/secret-manager).
+
+When you run `pnpm cf-typegen` it generates `worker-configuration.d.ts` which creates an `Env` class for your code to access cloudflare bindings, env vars, and more.
 
 ### McpHonoServerDO Implementation
 
@@ -62,7 +68,7 @@ By default, the template uses `McpHonoServerDO` which combines the MCP server wi
 To add custom HTTP endpoints with `McpHonoServerDO`, extend the `setupRoutes` method:
 
 ```typescript
-export class ExampleMcpServer extends McpHonoServerDO {
+export class ExampleMcpServer extends McpHonoServerDO<Env> {
   // Other methods...
 
   protected setupRoutes(app: Hono<{ Bindings: Env }>): void {
@@ -88,7 +94,7 @@ export class ExampleMcpServer extends McpHonoServerDO {
 If you need more control over the HTTP request handling, you can directly extend `McpServerDO` instead. This gives you full control over the `fetch` method:
 
 ```typescript
-export class CustomMcpServer extends McpServerDO {
+export class CustomMcpServer extends McpServerDO<Env> {
   // Required abstract method implementations
   getImplementation(): Implementation {
     return {
@@ -132,7 +138,7 @@ This approach is useful when you need to:
 The main server implementation is in `src/server.ts` and extends `McpHonoServerDO`:
 
 ```typescript
-export class ExampleMcpServer extends McpHonoServerDO {
+export class ExampleMcpServer extends McpHonoServerDO<Env> {
   // Required abstract method implementation
   getImplementation(): Implementation {
     return {
