@@ -1,13 +1,3 @@
-import { defineWorkersConfig } from '@cloudflare/vitest-pool-workers/config';
+import { createMcpWorkersConfig } from "@nullshot/test-utils/vitest/mcpWorkersConfig";
 
-export default defineWorkersConfig({
-	test: {
-		poolOptions: {
-			workers: {
-				isolatedStorage: false, // This is required for Durable Objects to work
-				//singleWorker: true, // This is required if you plan to have multiple files doing integration tests
-				wrangler: { configPath: './wrangler.jsonc' },
-			},
-		},
-	},
-});
+export default createMcpWorkersConfig();
