@@ -1,8 +1,8 @@
 import { env, createExecutionContext, waitOnExecutionContext } from 'cloudflare:test';
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { WorkerSSEClientTransport } from '@xava-labs/test-utils';
-import { WorkerWebSocketClientTransport } from '@xava-labs/test-utils';
+import { WorkerSSEClientTransport } from '@nullshot/test-utils';
+import { WorkerWebSocketClientTransport } from '@nullshot/test-utils';
 
 describe('MCP Client Connection Tests', () => {
   const baseUrl = 'http://localhost';

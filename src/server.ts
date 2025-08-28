@@ -1,5 +1,5 @@
 import { Implementation } from '@modelcontextprotocol/sdk/types.js';
-import { McpHonoServerDO } from '@xava-labs/mcp';
+import { McpHonoServerDO } from '@nullshot/mcp';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { setupServerTools } from './tools';
 import { setupServerResources } from './resources';
@@ -8,7 +8,7 @@ import { setupServerPrompts } from './prompts';
 /**
  * TodoMcpServer extends McpHonoServerDO for CRUD operations on todo items
  */
-export class ExampleMcpServer extends McpHonoServerDO {
+export class ExampleMcpServer extends McpHonoServerDO<Env> {
   constructor(ctx: DurableObjectState, env: Env) {
     super(ctx, env);
   }
