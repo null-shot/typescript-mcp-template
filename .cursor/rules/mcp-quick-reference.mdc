@@ -1,8 +1,7 @@
 ---
-alwaysApply: true
 description: "Quick reference for MCP development patterns"
+alwaysApply: false
 ---
-
 # MCP Development Quick Reference
 
 ## When Building MCP Servers
