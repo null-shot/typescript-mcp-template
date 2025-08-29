@@ -12,8 +12,8 @@ importers:
         specifier: ^1.17.4
         version: 1.17.4
       '@nullshot/mcp':
-        specifier: 0.3.2
-        version: 0.3.2
+        specifier: 0.3.6
+        version: 0.3.6
       zod:
         specifier: ^3.25.76
         version: 3.25.76
@@ -541,8 +541,8 @@ packages:
     engines: {node: '>=22.0.0'}
     hasBin: true
 
-  '@nullshot/mcp@0.3.2':
-    resolution: {integrity: sha512-bDDmEgHoDYYm6/cP7J80PF+ru+f2r9Mr7gFHgdBa/aFyD71jh/SIbmgbjZNce4J5sn606UbK+cFXK3iWylxnOw==}
+  '@nullshot/mcp@0.3.6':
+    resolution: {integrity: sha512-fRpROzJuL1nT5jKzT6YelaeRRvitE9vXmwtag5zXmisAQ7QJG+YfPDQEtgT/Aj+AOtVolA6nxsPRdmJfpICY7A==}
 
   '@nullshot/test-utils@0.3.1':
     resolution: {integrity: sha512-OjACWpN4snfZsmq5eOFUWYBKuvB2HsnO9G4P0WEJIQA1qXy2lTWuSc3FFFCZbNtN7Qqqv15w+hESZvoD1qM9nQ==}
@@ -1934,7 +1934,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nullshot/mcp@0.3.2':
+  '@nullshot/mcp@0.3.6':
     dependencies:
       '@modelcontextprotocol/sdk': 1.17.4
       hono: 4.9.1
